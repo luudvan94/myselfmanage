@@ -12,6 +12,11 @@
 		CD3E2093219E56430074E1EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3E2091219E56430074E1EC /* Main.storyboard */; };
 		CD3E2095219E56450074E1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3E2094219E56450074E1EC /* Assets.xcassets */; };
 		CD3E2098219E56450074E1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3E2096219E56450074E1EC /* LaunchScreen.storyboard */; };
+		CD73C03D21A11FA600C58BDB /* FeatureCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73C03C21A11FA600C58BDB /* FeatureCollectionView.swift */; };
+		CD73C03F21A11FBA00C58BDB /* FeatureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD73C03E21A11FBA00C58BDB /* FeatureCollectionViewCell.xib */; };
+		CD73C04221A1217900C58BDB /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73C04121A1217900C58BDB /* UICollectionViewExtensions.swift */; };
+		CD73C04421A121CA00C58BDB /* FeatureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD73C04321A121CA00C58BDB /* FeatureCollectionViewCell.swift */; };
+		CDB701E621A05B81005E36C6 /* DashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB701E521A05B81005E36C6 /* DashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CD3E2094219E56450074E1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3E2097219E56450074E1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3E2099219E56450074E1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD73C03C21A11FA600C58BDB /* FeatureCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollectionView.swift; sourceTree = "<group>"; };
+		CD73C03E21A11FBA00C58BDB /* FeatureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeatureCollectionViewCell.xib; sourceTree = "<group>"; };
+		CD73C04121A1217900C58BDB /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		CD73C04321A121CA00C58BDB /* FeatureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCollectionViewCell.swift; sourceTree = "<group>"; };
+		CDB701E521A05B81005E36C6 /* DashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		CD3E208C219E56430074E1EC /* Manage Myself */ = {
 			isa = PBXGroup;
 			children = (
-				CD3E208D219E56430074E1EC /* AppDelegate.swift */,
-				CD3E208F219E56430074E1EC /* ViewController.swift */,
-				CD3E2091219E56430074E1EC /* Main.storyboard */,
-				CD3E2094219E56450074E1EC /* Assets.xcassets */,
-				CD3E2096219E56450074E1EC /* LaunchScreen.storyboard */,
-				CD3E2099219E56450074E1EC /* Info.plist */,
+				CD73C04021A1216800C58BDB /* Extensions */,
+				CDB701E321A05A5B005E36C6 /* Resources */,
+				CDB701E221A05A54005E36C6 /* Commons */,
+				CDB701E021A05A42005E36C6 /* Features */,
 			);
 			path = "Manage Myself";
+			sourceTree = "<group>";
+		};
+		CD73C04021A1216800C58BDB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD73C04121A1217900C58BDB /* UICollectionViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CDB701E021A05A42005E36C6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CDB701E121A05A4F005E36C6 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CDB701E121A05A4F005E36C6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CD3E208F219E56430074E1EC /* ViewController.swift */,
+				CD73C03C21A11FA600C58BDB /* FeatureCollectionView.swift */,
+				CD73C03E21A11FBA00C58BDB /* FeatureCollectionViewCell.xib */,
+				CD73C04321A121CA00C58BDB /* FeatureCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CDB701E221A05A54005E36C6 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				CDB701E521A05B81005E36C6 /* DashView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		CDB701E321A05A5B005E36C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD3E2099219E56450074E1EC /* Info.plist */,
+				CD3E2091219E56430074E1EC /* Main.storyboard */,
+				CD3E2096219E56450074E1EC /* LaunchScreen.storyboard */,
+				CD3E208D219E56430074E1EC /* AppDelegate.swift */,
+				CD3E2094219E56450074E1EC /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +180,7 @@
 				CD3E2098219E56450074E1EC /* LaunchScreen.storyboard in Resources */,
 				CD3E2095219E56450074E1EC /* Assets.xcassets in Resources */,
 				CD3E2093219E56430074E1EC /* Main.storyboard in Resources */,
+				CD73C03F21A11FBA00C58BDB /* FeatureCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD73C04221A1217900C58BDB /* UICollectionViewExtensions.swift in Sources */,
 				CD3E2090219E56430074E1EC /* ViewController.swift in Sources */,
+				CD73C03D21A11FA600C58BDB /* FeatureCollectionView.swift in Sources */,
+				CDB701E621A05B81005E36C6 /* DashView.swift in Sources */,
 				CD3E208E219E56430074E1EC /* AppDelegate.swift in Sources */,
+				CD73C04421A121CA00C58BDB /* FeatureCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
-				INFOPLIST_FILE = "Manage Myself/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Manage Myself/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6T98W5TB24;
-				INFOPLIST_FILE = "Manage Myself/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Manage Myself/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
